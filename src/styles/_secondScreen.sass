@@ -1,0 +1,161 @@
+.main1
+  &__aside
+    position: relative
+    border-left: 0.8vw solid $orange
+    box-shadow: -15vw 0 10vw 6vw rgba(88,28,28,0.45)   
+    z-index: 3
+    height: 100%
+    background-color: #f6f5f5
+    z-index: 4
+    width: 44.1vw
+
+    &__upperblock
+      background-color: $orange
+      height: 9vw 
+
+    &__container
+      padding: 1vw 0 0 3.5vw
+      position: relative
+      z-index: 5
+
+    &__icon
+      width: 2.5vw
+      height: 2.5vw
+      border: 0.4vw solid $orange
+      border-radius: 50%
+      text-align: center
+      line-height: 2vw
+      background-color: $white
+      position: relative
+      z-index: 7
+      transform: translate(-5.6vw, 3.5vw)
+      transition: 1s
+      cursor: pointer
+
+      &:hover
+        transform: scale(1.2) translate(-4.6vw, 3vw)
+
+    &__ui-icon
+      width: 1.5vw
+      height: 1.5vw
+      position: relative
+      z-index: 10 
+      transform: translateY(0.5vw)
+
+    &__condition
+      width: 30vw
+
+      &__header        
+        font-size: 1.8vw
+        color: $orange  
+        font-weight: bold
+        text-transform: uppercase
+        line-height: 1.2
+        margin-bottom: 0.8vw
+        display: block
+
+    &__performance
+      margin-top: 1vw
+      display: flex
+      flex-direction: column
+
+      &__button
+        width: 15vw
+        height: 4vw
+        background-color: $white
+        margin-top: 1vw
+        color: $text-color
+        font-size: 1.4vw
+        line-height: 1.2        
+        border: 1px solid rgb(211, 211, 211)
+        border-radius: 1vw
+        background-color: $orange
+        color: $white
+        margin: 4vw 0 0 2vw
+        text-transform: uppercase
+        font-weight: 600
+        cursor: pointer
+        transition: 1s
+
+        &:hover       
+          background-color: $white  
+          color: $orange
+          border: 1px solid $orange
+          transform: scale(1.2)
+
+  &__footer
+    position: relative
+    height: 3.5vw
+    top: 92.4vh
+    background-color: $white
+    opacity: 0.741
+    box-sizing: border-box
+    display: flex
+    z-index: 5
+    width: 55vw
+    padding: 0.6vw 8vw
+    flex-wrap: wrap
+    justify-content: space-between
+
+    &__link
+      font-size: 0.6vw
+      color: $text-color
+      font-weight: bold
+      text-transform: uppercase
+      line-height: 1.2
+      text-align: left
+      margin: 0 0.8vw
+      display: inline-block
+      transition: 1s
+      margin-bottom: 0.5vw
+
+      &:hover
+        color: $hover-text 
+
+  &__bubling    
+    background-color: $orange
+    opacity: 0.702
+    position: absolute
+    width: 55vw
+    height: 92.5vh 
+    z-index: 2
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+    &__header
+      font-size: 16vw
+      color: $white 
+      text-transform: uppercase
+      opacity: 1
+      font-weight: 900 
+      line-height: 1
+
+    &__text
+      font-size: 2vw
+      color: $white
+      text-transform: uppercase
+      opacity: 1
+      font-weight: 900 
+
+    &__container
+      color: $white
+      width: 35vw
+      opacity: 10
+
+#main1__aside__performance__button
+  width: 20vw
+  height: 3vw
+  background-color: $white
+  margin-top: 1vw
+  color: $text-color
+  font-size: 1.5vw
+  line-height: 1.2
+  font-weight: 600
+  font-family: "Open Sans"
+  transition: 1s
+
+  &:hover
+    border-color: $orange
+    transform: scale(1.2)

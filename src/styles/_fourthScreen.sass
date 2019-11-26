@@ -1,0 +1,185 @@
+.main3
+  &__aside
+    position: relative
+    border-left: 0.8vw solid $blue
+    box-shadow: -15vw 0 10vw 6vw rgba(145,109,39,0.45)   
+    z-index: 3
+    height: 100%
+    background-color: #f6f5f5
+    z-index: 4
+    width: 44.1vw
+
+    &__upperblock
+      background-color: $blue
+      height: 9vw 
+
+    &__container
+      padding: 0 3.5vw 0
+      position: relative
+      z-index: 5
+
+    &__icon
+      width: 2.5vw
+      height: 2.5vw
+      border: 0.4vw solid $blue
+      border-radius: 50%
+      text-align: center
+      line-height: 2vw
+      background-color: $white
+      position: relative
+      z-index: 7
+      transform: translate(-5.6vw, 5vw)
+      transition: 1s
+      cursor: pointer
+
+      &:hover
+        transform: scale(1.2) translate(-4.6vw, 4vw)
+
+    &__ui-icon
+      width: 1.5vw
+      height: 1.5vw
+      position: relative
+      z-index: 10 
+      transform: translateY(0.5vw)
+
+
+    &__condition
+      width: 30vw
+
+      &__header        
+        font-size: 1.8vw
+        color: $blue  
+        font-weight: bold
+        text-transform: uppercase
+        line-height: 1.2
+        margin-bottom: 1vw
+        display: block
+        margin-top: 1.3vw
+
+    &__performance
+      margin-top: 1vw
+      display: flex
+      flex-direction: column
+
+      &__form
+        width: 25vw
+
+      &__text
+        color: $text-color
+        font-size: 0.8vw
+        font-weight: 700
+        margin-top: 0.3vw
+
+      &__input
+        height: 2.5vw
+        width: 23.8vw
+        border: 0.1vw solid #c5c5c5
+        border-radius: 0.5vw 
+        outline: none
+        padding-left: 1vw        
+
+        &:focus
+          border-color: $blue
+
+      &__checkbox
+        display: flex
+        flex-direction: row-reverse
+        justify-content: flex-start
+        margin-top: 0.3vw
+
+        &__text
+          font-size: 0.7vw
+          font-weight: 400
+          margin-top: 0
+
+      &__buttons
+        display: flex
+
+      &__button
+        width: 15vw
+        height: 4vw
+        background-color: $white
+        color: rgb(170, 169, 169)
+        font-size: 1.4vw
+        line-height: 1.2        
+        border: 1px solid $blue
+        border-radius: 1vw
+        background-color: $white
+        margin-top: 1vw
+        text-transform: uppercase
+        font-weight: 600
+        cursor: pointer
+        transition: 1s
+
+        &_person
+          display: inline-block
+          width: 1.3vw
+          height: 1.7vw
+          margin-right: 0.5vw
+
+  &__footer
+    position: relative
+    height: 3.5vw
+    top: 92.4vh
+    background-color: $white
+    opacity: 0.741
+    box-sizing: border-box
+    display: flex
+    z-index: 5
+    width: 55vw
+    padding: 0.6vw 8vw
+    flex-wrap: wrap
+    justify-content: space-between
+
+    &__link
+      font-size: 0.6vw
+      color: $text-color
+      font-weight: bold
+      text-transform: uppercase
+      line-height: 1.2
+      text-align: left
+      margin: 0 0.8vw
+      display: inline-block
+      transition: 1s
+      margin-bottom: 0.5vw
+
+      &:hover
+        color: $hover-text 
+
+.error
+  border: 0.1vw solid rgb(255, 0, 0)
+  color: rgb(255, 0, 0)
+
+.active-button       
+  background-color: $blue 
+  color: $white 
+  border: 1px solid rgb(211, 211, 211)
+  transform: scale(1.2)
+  
+#main3__aside__performance__button
+  font-family: inherit
+  width: 15vw
+  height: 2.7vw
+  background-color: $white
+  margin-top: 0.2vw
+  color: $text-color
+  font-size: 1vw
+  line-height: 1.2
+  font-weight: 600
+  font-family: "Open Sans"
+  border-radius: 0.5vw
+  transition: 1s  
+  display: flex
+  justify-content: center
+  align-items: center
+
+  &:hover
+    border-color: $blue
+    transform: scale(1.2)  
+
+  &:focus
+    color: #ffffff
+    background-color: $blue
+
+  &:first-child    
+    margin-right: 1.5vw 
